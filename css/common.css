@@ -152,6 +152,26 @@ body {
 }
 
 /* конпки контакти */
+.cont-nav .mail-icon {
+  width: 16px;
+  height: 11px;
+  margin-right: 10px;
+  fill: currentColor;
+  cursor: pointer;
+}
+.cont-nav .tel-icon {
+  width: 10px;
+  height: 15px;
+  margin-right: 10px;
+  fill: currentColor;
+  cursor: pointer;
+}
+.contacts-text:focus,
+.contacts-text:hover {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
 .item .icon {
   margin-right: 10px;
 }
@@ -166,11 +186,6 @@ body {
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
-}
-
-.contacts-text:focus,
-.contacts-text:hover {
-  color: var(--accent-color);
 }
 
 .feature-list,
@@ -270,11 +285,13 @@ body {
   color: var(--backgraund-bg-color);
 }
 .button.primary {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   min-width: 200px;
   border-radius: 4px;
   padding: 10px 32px;
   text-align: center;
+  cursor: pointer;
 
   color: var(--white-color);
   background-color: var(--accent-color);
@@ -285,6 +302,16 @@ body {
   line-height: 1.87;
   letter-spacing: 0.06em;
 }
+.button.primary::after {
+  content: "";
+
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  background-image: url("../images/icon-send.svg");
+  background-size: contain;
+}
+
 .foot-follow .img-btn {
   margin-left: 10px;
 }

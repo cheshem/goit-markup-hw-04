@@ -107,14 +107,36 @@ body {
   border: 1px solid #ececec;
 }
 
-.iteam .img {
+/* .iteam .img {
   display: block;
   padding-right: 100px;
   padding-left: 100px;
   padding-bottom: 20px;
   padding-top: 25px;
-  /* outline: 2px solid tomato; */
+  
   margin-bottom: 30px;
+} */
+.iteam::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+.icon-antena::before {
+  background-image: url(../images/antenas.svg);
+}
+.icon-clock::before {
+  background-image: url(../images/clocks.svg);
+}
+.icon-tv::before {
+  background-image: url(../images/diagrams.svg);
+}
+.icon-space::before {
+  background-image: url(../images/astronauts.svg);
 }
 .adventage .list {
   display: flex;
@@ -230,6 +252,25 @@ body {
 .list .icon li {
   margin-right: 10px;
 }
+
+.box .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--accent-color);
+}
+.box .social-icon {
+  fill: currentColor;
+}
+.link {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
 .list .icon li:nth-child(4) {
   margin-right: 0;
 }

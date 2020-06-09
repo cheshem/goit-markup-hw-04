@@ -34,19 +34,20 @@
 
         <ul class="cont-nav list">
           <li class="item">
-            <a class="contacts-text" href=""
-              ><img
-                class="icon"
-                src="./images/envelope(hover).svg"
-                alt=""
-              />info@devstudio.com</a
+            <a href="mailto" class="contacts-text">
+              <svg class="mail-icon">
+                <use href="./images/sprite.svg#icon-konvert"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
 
           <li class="item">
-            <a class="contacts-text" href=""
-              ><img class="icon" src="./images/Vector(1).svg" alt="" />+38 096
-              111 11 11</a
+            <a href="mailto" class="contacts-text">
+              <svg class="tel-icon">
+                <use href="./images/sprite.svg#icon-telefon"></use>
+              </svg>
+              +38 096 111 11 11</a
             >
           </li>
         </ul>
@@ -69,32 +70,32 @@
       <section class="section adventage">
         <div class="container">
           <ul class="feature-list list">
-            <li class="iteam">
-              <img class="img" src="./images/antenas.svg" alt="" />
+            <li class="iteam icon-antena">
+              <!-- <img class="img" src="./images/antenas.svg" alt="" /> -->
               <h2 class="title">Внимание к деталям</h2>
               <p class="text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="iteam">
-              <img class="img" src="./images/clock 1.svg" alt="" />
+            <li class="iteam icon-clock">
+              <!-- <img class="img" src="./images/clock 1.svg" alt="" /> -->
               <h2 class="title">Пунктуальность</h2>
               <p class="text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="iteam">
-              <img class="img" src="./images/diagram 1.svg" alt="" />
+            <li class="iteam icon-tv">
+              <!-- <img class="img" src="./images/diagram 1.svg" alt="" /> -->
               <h2 class="title">Планирование</h2>
               <p class="text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="iteam">
-              <img class="img" src="./images/cosmo.svg" alt="" />
+            <li class="iteam icon-space">
+              <!-- <img class="img" src="./images/cosmo.svg" alt="" /> -->
               <h2 class="title">Современные технологии</h2>
               <p class="text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -147,10 +148,16 @@
               <p class="team-position">Product Designer</p>
 
               <ul class="list icon">
-                <li>
-                  <a href="instagram.com"
-                    ><img class="svg" src="./images/instagram 2.svg" alt=""
-                  /></a>
+                <li class="box social">
+                  <a
+                    href="http://instagram.com"
+                    aria-label="ссылка инстаграм"
+                    class="link"
+                  >
+                    <svg class="social-icon" width="20" height="20">
+                      <use href="./images/sprite.svg#icon-insta"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li>
                   <a href="facebook.com"
