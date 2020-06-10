@@ -261,8 +261,14 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  color: var(--accent-color);
+  color: var(--white-color);
 }
+.box .link:hover,
+.box .link:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
 .box .social-icon {
   fill: currentColor;
 }
