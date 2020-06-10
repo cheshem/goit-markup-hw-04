@@ -116,7 +116,7 @@ body {
   
   margin-bottom: 30px;
 } */
-.iteam::before {
+/* .iteam::before {
   display: block;
   content: "";
   height: 120px;
@@ -125,11 +125,37 @@ body {
   background-color: #f5f4fa;
   margin-bottom: 30px;
   border-radius: 4px;
-}
-.icon-antena::before {
+} */
+/* .icon-antena::before {
   background-image: url(../images/antenas.svg);
+} */
+
+/* .advantage .background-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  margin-bottom: 30px;
+  height: 120px;
+  background-color: #f5f4fa;
+} */
+.backgraund-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  border-radius: 4px;
 }
-.icon-clock::before {
+.preference-icon {
+  width: 65px;
+  height: 70px;
+  align-items: center;
+}
+
+/* .icon-clock::before {
   background-image: url(../images/clocks.svg);
 }
 .icon-tv::before {
@@ -137,7 +163,7 @@ body {
 }
 .icon-space::before {
   background-image: url(../images/astronauts.svg);
-}
+} */
 .adventage .list {
   display: flex;
 }
@@ -265,16 +291,16 @@ body {
 }
 .box .link:hover,
 .box .link:focus {
-  color: var(--white-color);
   background-color: var(--accent-color);
 }
 
-.box .social-icon {
-  fill: currentColor;
+.box .social-icon:hover,
+.box .social-icon:focus {
+  fill: var(--white-color);
 }
-.link {
-  color: var(--accent-color);
-  fill: var(--accent-color);
+.box .social-icon {
+  background-color: transparent;
+  fill: var(--social-color);
 }
 
 .list .icon li:nth-child(4) {
@@ -332,6 +358,29 @@ body {
 .customer li:nth-child(6n) {
   margin-right: 0;
 }
+.customer .link:hover,
+.customer .link:focus {
+  color: var(--accent-color);
+}
+.customer .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  color: var(--social-color);
+}
+.customer-icon {
+  /* width: 44px;
+  height: 49px; */
+  fill: currentColor;
+  cursor: pointer;
+}
+.link .customer-icon:hover,
+.link .customer-icon:focus {
+  color: var(--accent-color);
+}
+
 .customer .img {
   display: block;
   margin-left: auto;
@@ -340,11 +389,11 @@ body {
   padding-bottom: 20px;
 }
 
-.customer .img:hover {
+/* .customer .img:hover {
   filter: invert(39%) sepia(57%) saturate(200%) saturate(200%) saturate(200%)
     saturate(200%) saturate(200%) saturate(147.75%) hue-rotate(202deg)
     brightness(97%) contrast(96%);
-}
+} */
 .customer li:hover,
 .customer li:focus {
   border: 1px solid var(--accent-color);
@@ -357,4 +406,9 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
+}
+/* футер */
+.link {
+  color: var(--accent-color);
+  fill: var(--accent-color);
 }

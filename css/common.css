@@ -7,6 +7,7 @@
   --white-second-color: #f5f4fa;
   --white-bg-color: #e5e5e5;
   --backgraund-bg-color: #2f303a;
+  --social-color: #afb1b8;
 }
 html {
   box-sizing: border-box;
@@ -153,15 +154,11 @@ body {
 
 /* конпки контакти */
 .cont-nav .mail-icon {
-  width: 16px;
-  height: 11px;
   margin-right: 10px;
   fill: currentColor;
   cursor: pointer;
 }
 .cont-nav .tel-icon {
-  width: 10px;
-  height: 15px;
   margin-right: 10px;
   fill: currentColor;
   cursor: pointer;
@@ -310,6 +307,36 @@ body {
   margin-left: 10px;
   background-image: url("../images/icon-send.svg");
   background-size: contain;
+}
+/* посилання на соціальні */
+.social .list {
+  display: flex;
+  justify-items: center;
+}
+.social .social-icon {
+  fill: currentColor;
+}
+.foot-link .social .item {
+  margin-right: 10px;
+}
+
+.social .link:hover,
+.social .link:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.social .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  color: var(--white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+
+  border-radius: 50%;
 }
 
 .foot-follow .img-btn {
