@@ -271,8 +271,9 @@ body {
   letter-spacing: 0.03em;
 }
 .list.icon {
-  justify-content: space-evenly;
-  margin-right: 0;
+  display: flex;
+  justify-content: center;
+  /* margin-right: 0; */
   padding-bottom: 24px;
 }
 .list .icon li {
